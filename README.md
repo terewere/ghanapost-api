@@ -7,7 +7,7 @@ This api allows developers to get their desired locations in Ghana using digital
 
 
 # Setting up an Account
-To setup an account, simply sign up [Signup Here](http://161.35.163.133/register) . When you complete the signup form a verification mail will be sent to you to verify your email. Upon successful verification, you will be generate client detail for access the API.
+To setup an account, simply sign up [Signup Here](http://161.35.163.133/register) . When you complete the signup form a verification mail will be sent to you to verify your email. Upon successful verification, you will be able to generate client detail so that you can access the API.
 
 
 # Usage
@@ -121,18 +121,14 @@ With the access token generated from the previous step, request for location inf
 1. Javascript (axios)
 
 var axios = require('axios');
-var FormData = require('form-data');
-var data = new FormData();
 
 var config = {
-  method: 'post',
+  method: 'get',
   url: 'http://161.35.163.133/api/gps?Action=GetLocation&GPSName=GN09206216',
   headers: { 
     'Accept': 'application/json', 
     'Authorization': 'Bearer [access_token_here]', 
-    ...data.getHeaders()
-  },
-  data : data
+  }
 };
 
 axios(config)
@@ -156,7 +152,7 @@ curl_setopt_array($curl, array(
   CURLOPT_TIMEOUT => 0,
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_CUSTOMREQUEST => 'GET',
   CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
     'Authorization: Bearer [access_token_here]'
@@ -175,7 +171,7 @@ var headers = {
   'Authorization': 'Bearer [access_token_here]'
 
 };
-var request = http.MultipartRequest('POST', Uri.parse('http://161.35.163.133/api/gps?Action=GetLocation&GPSName=GN09206216'));
+var request = http.Request('GET', Uri.parse('http://161.35.163.133/api/gps?Action=GetLocation&GPSName=GN09206216'));
 
 request.headers.addAll(headers);
 
@@ -199,9 +195,8 @@ payload = ''
 headers = {
   'Accept': 'application/json',
   'Authorization': ''Bearer [access_token_here]'
-  'Content-type': 'multipart/form-data; boundary={}'.format(boundary)
 }
-conn.request("POST", "/api/gps?Action=GetLocation&GPSName=GN09206216", payload, headers)
+conn.request("GET", "/api/gps?Action=GetLocation&GPSName=GN09206216", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
@@ -236,28 +231,26 @@ If the request is successful, the requested location info is returned as respons
 Get location data Ghana Post API using GPS coordinates(LAT & LONG).
 
 To get location by GPS coordinate you need to generate access_token
+
 Parameters: 
 Lati. Latitude. example: 5.8142835999999996
 Longi. Longitude. example: 0.0746767
 
 #### Obtaining Location
-With the access token generated from the previous step, request for location info by calling our API with GPSName (Digital Address), see an example below.
+With the access token generated from the previous step, request for location info by calling our API with GPS Coordinates (Latitude & Longitude), see an example below.
 
 1. Javascript (axios)
 
 var axios = require('axios');
-var FormData = require('form-data');
-var data = new FormData();
 
 var config = {
   method: 'get',
   url: 'http://161.35.163.133/api/gps?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767',
   headers: { 
     'Accept': 'application/json', 
-    'Authorization': 'Bearer [access_token_here]', 
-    ...data.getHeaders()
+    'Authorization': 'Bearer [access_token_here]'
+   
   },
-  data : data
 };
 
 axios(config)
