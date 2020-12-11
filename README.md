@@ -21,7 +21,7 @@ To obtain an `access_token`, you need to generate a `client` id and `secret` fro
 
 #### Obtaining Access Token
 After generating client details, request for access token by calling our API with the client details, see an example below.
-
+```
 1. Javascript (axios)
 var axios = require('axios');
 
@@ -103,7 +103,7 @@ print(data.decode("utf-8"))
     "expires_in": 31536000,
     "access_token": "[access_token]"
 }
-
+```
 If the request is successful, an access token is returned as response. use it to access the Ghana Post API.
 
 
