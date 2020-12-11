@@ -118,6 +118,7 @@ GPSName. the digital address. example: GN09206216
 #### Obtaining Location
 With the access token generated from the previous step, request for location info by calling our API with GPSName (Digital Address), see an example below.
 
+```
 1. Javascript (axios)
 
 var axios = require('axios');
@@ -222,6 +223,7 @@ print(data.decode("utf-8"))
     "Street": ".[Unknown Street]",
     "PlaceName": ""
 }
+```
 
 If the request is successful, the requested location info is returned as response.
 
@@ -239,6 +241,7 @@ Longi. Longitude. example: 0.0746767
 #### Obtaining Location
 With the access token generated from the previous step, request for location info by calling our API with GPS Coordinates (Latitude & Longitude), see an example below.
 
+```
 1. Javascript (axios)
 
 var axios = require('axios');
@@ -336,7 +339,7 @@ print(data.decode("utf-8"))
     "Street": ".[Unknown Street]",
     "PlaceName": ""
 }
-If the request is successful, the requested location info is returned as response.
-
 
 ```
+If the request is successful, the requested location info is returned as response.
+
