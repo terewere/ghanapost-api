@@ -3,11 +3,11 @@ Get Location using digital address and GPS Coordinates (Latitud and Longitude)
 [documentation](http://161.35.163.133/documentation)
 
 # Description
-This api allows developers to get their desired locations in Ghana using digital address and GPS coordinates. To start usinng the Ghana Post GPS API, you need an account. 
+This api allows developers to get their desired locations in Ghana using digital address and GPS coordinates. To start using the Ghana Post GPS API, you need an account. 
 
 
 # Setting up an Account
-Setting up an account is as easy as possible, simply sign up [Signup Here](http://161.35.163.133/register) . When you complete the signup form a verification mail will be sent to you to verify your email. Upon successful verification, you will be generate client detail for access the API.
+To setup an account, simply sign up [Signup Here](http://161.35.163.133/register) . When you complete the signup form a verification mail will be sent to you to verify your email. Upon successful verification, you will be generate client detail for access the API.
 
 
 # Usage
