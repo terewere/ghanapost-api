@@ -14,7 +14,7 @@ To quickly obtain location details without signing up for the Access Token, see 
 **Note:** you can only access 5 location details in 5 minutes.
 
 ###### JavaScript (axios)
-``
+
 //USING DIGITAL ADDRESS
 //https://api.sourcecodegh.com/v1/gps/trial/GPSName
 
@@ -58,11 +58,11 @@ axios(config)
 })
 .catch(function (error) {
   console.log(error);
-  ``
+  
 
   ###### PHP (curl)
 
-``
+
  //USING DIGITAL ADDRESS
  //https://api.sourcecodegh.com/v1/gps/trial/GPSName
 
@@ -114,10 +114,10 @@ $response = curl_exec($curl);
 
 curl_close($curl);
 echo $response;
-``
+
 
 ###### Dart
-``
+
 //USING DIGITAL ADDRESS
 //https://api.sourcecodegh.com/v1/gps/trial/GPSName
 
@@ -163,10 +163,10 @@ if (response.statusCode == 200) {
 else {
   print(response.reasonPhrase);
 }
-``
+
 
 ###### Pyython (http.client)
-``
+
 //USING DIGITAL ADDRESS
 //https://api.sourcecodegh.com/v1/gps/trial/GPSName
 
@@ -202,7 +202,6 @@ res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
 
-``
 
 # Setting up an Account
 To access the API without LIMITATION, you need to create an account. This is required to prevent abuse of the API.
@@ -221,6 +220,7 @@ To obtain an `access_token`, you need to generate a `client` id and `secret` fro
 #### Obtaining Access Token
 After generating client details, request for access token by calling our API with the client details, see an example below.
 
+``
 1. Javascript (axios)
 var axios = require('axios');
 
