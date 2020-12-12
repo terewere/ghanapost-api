@@ -216,7 +216,7 @@ Setting up an account is compeletly FREE, simply sign up [Here](https://api.sour
 
 Used to generate token to access Ghana Post API.
 
-To obtain an `access_token`, you need to generate a `client` id and `secret` from your dashoard. **[Sign in Here](/login)**
+To obtain an `access_token`, you need to generate a `client` id and `secret` from your dashoard. **[Sign in Here](https://api.sourcecodegh.com/v1/login)**
 
 #### Obtaining Access Token
 After generating client details, request for access token by calling our API with the client details, see an example below.
