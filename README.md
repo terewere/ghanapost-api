@@ -13,7 +13,7 @@ Get location data Ghana Post API using Digital Address or GPS coordinates(LAT & 
 To quickly obtain location details without signing up for the Access Token, see an example below.
 **Note:** you can only access 5 location details in 5 minutes.
 
-###### JavaScript (axios)
+#### JavaScript (axios)
 ```
 //USING DIGITAL ADDRESS
 //https://api.sourcecodegh.com/v1/gps/trial/GPSName
@@ -60,7 +60,7 @@ axios(config)
   console.log(error);
   ```
 
-  ###### PHP (curl)
+  #### PHP (curl)
 
 ```
  //USING DIGITAL ADDRESS
@@ -116,7 +116,7 @@ curl_close($curl);
 echo $response;
 ```
 
-###### Dart
+#### Dart
 ```
 //USING DIGITAL ADDRESS
 //https://api.sourcecodegh.com/v1/gps/trial/GPSName
@@ -165,7 +165,7 @@ else {
 }
 ```
 
-###### Pyython (http.client)
+#### Python (http.client)
 ```
 //USING DIGITAL ADDRESS
 //https://api.sourcecodegh.com/v1/gps/trial/GPSName
@@ -221,7 +221,7 @@ To obtain an `access_token`, you need to generate a `client` id and `secret` fro
 #### Obtaining Access Token
 After generating client details, request for access token by calling our API with the client details, see an example below.
 
-###### Javascript (axios)
+#### Javascript (axios)
 
 ```
 var axios = require('axios');
@@ -244,7 +244,7 @@ axios(config)
 
 ```
 
-###### PHP (CURL)
+#### PHP (CURL)
 
 ```
 <?php
@@ -272,7 +272,7 @@ echo $response;
 
 ```
 
-###### Dart 
+#### Dart 
 
 ```
 var headers = {
@@ -293,7 +293,7 @@ else {
 
 ```
 
-###### Python(http.client)
+#### Python(http.client)
 
 ```
 import http.client
