@@ -538,4 +538,3 @@ print(data.decode("utf-8"))
 If the request is successful, the requested location info is returned as response.
 
 
-```
