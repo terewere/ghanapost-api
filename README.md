@@ -15,7 +15,7 @@ To quickly obtain location details without signing up for the Access Token, see 
 
 ### JavaScript (axios)
 
-``
+`
 USING DIGITAL ADDRESS
 https://api.sourcecodegh.com/v1/gps/trial/GPSName
 
@@ -59,7 +59,7 @@ axios(config)
 })
 .catch(function (error) {
   console.log(error);
-  ``
+  `
 
   ###### PHP (curl)
 
