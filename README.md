@@ -1,6 +1,6 @@
 # UNOFFICAL GHANA POST GPS REST API
 Get Location using digital address and GPS Coordinates (Latitud and Longitude)
-[documentation](https://api.sourcecodegh.com/v1/documentation)
+[documentation](https://api.sourcecodegh.com/documentation)
 
 # Description
 This API allows developers to get location details in Ghana using digital address or GPS coordinates.
