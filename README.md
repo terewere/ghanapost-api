@@ -11,7 +11,7 @@ Get location data Ghana Post API using Digital Address or GPS coordinates(LAT & 
 
 ## Obtaining Location
 To quickly obtain location details without signing up for the Access Token, see an example below.
-**Note:** you can only access 5 location details in 5 minutes.
+**Note:** you can only access 5 location details in 1 minute.
 
 #### JavaScript (axios)
 ```
