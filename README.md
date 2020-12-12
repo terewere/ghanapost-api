@@ -3,7 +3,7 @@ Get Location using digital address and GPS Coordinates (Latitud and Longitude)
 [documentation](https://api.sourcecodegh.com/v1/documentation)
 
 # Description
-This API allows developers to get location details in Ghana using digital address or GPS coordinates.
+This api allows developers to get location details in Ghana using digital address or GPS coordinates.
 
 # QUICK START - Limited Scope
 ## GET/POST
@@ -13,11 +13,10 @@ Get location data Ghana Post API using Digital Address or GPS coordinates(LAT & 
 To quickly obtain location details without signing up for the Access Token, see an example below.
 **Note:** you can only access 5 location details in 5 minutes.
 
-### JavaScript (axios)
-
-`
-USING DIGITAL ADDRESS
-https://api.sourcecodegh.com/v1/gps/trial/GPSName
+###### JavaScript (axios)
+``
+//USING DIGITAL ADDRESS
+//https://api.sourcecodegh.com/v1/gps/trial/GPSName
 
 var axios = require('axios');
 
@@ -59,7 +58,7 @@ axios(config)
 })
 .catch(function (error) {
   console.log(error);
-  `
+  ``
 
   ###### PHP (curl)
 
@@ -222,9 +221,7 @@ To obtain an `access_token`, you need to generate a `client` id and `secret` fro
 #### Obtaining Access Token
 After generating client details, request for access token by calling our API with the client details, see an example below.
 
-###### Javascript (axios)
-
-``
+1. Javascript (axios)
 var axios = require('axios');
 
 var config = {
@@ -243,11 +240,8 @@ axios(config)
   console.log(error);
 });
 
-``
+2. PHP (CURL)
 
-###### PHP (CURL)
-
-``
 <?php
 
 $curl = curl_init();
@@ -271,11 +265,7 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response;
 
-``
-
-###### Dart 
-
-``
+3. Dart 
 var headers = {
   'Accept': 'application/json'
 };
@@ -292,11 +282,7 @@ else {
   print(response.reasonPhrase);
 }
 
-``
-
-###### Python(http.client)
-
-``
+4. Python(http.client)
 import http.client
 
 conn = http.client.HTTPSConnection("161.35.163.133")
@@ -309,18 +295,16 @@ res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
 
-``
 
 ## JSON RESPONSE
-``
 {
     "token_type": "Bearer",
     "expires_in": 31536000,
     "access_token": "[access_token]"
 }
-``
 
 If the request is successful, an access token is returned as response. use it to access the Ghana Post API.
+
 
 
 ## GET LOCATION USING DIGITAL ADDRESS
@@ -333,9 +317,7 @@ GPSName. the digital address. example: GN09206216
 #### Obtaining Location
 With the access token generated from the previous step, request for location info by calling our API with GPSName (Digital Address), see an example below.
 
-###### Javascript (axios)
-
-``
+1. Javascript (axios)
 
 var axios = require('axios');
 
@@ -356,11 +338,7 @@ axios(config)
   console.log(error);
 });
 
-``
-
-###### PHP (CURL)
-
-``
+2. PHP (CURL)
 <?php
 
 $curl = curl_init();
@@ -385,12 +363,7 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response;
 
-``
-
-
-###### Dart
-
-``
+3. Dart
 
 var headers = {
   'Accept': 'application/json',
@@ -410,12 +383,7 @@ else {
   print(response.reasonPhrase);
 }
 
-``
-
-###### Python(http.cient)
-
-``
-
+4. Python(http.cient)
 import http.client
 import mimetypes
 from codecs import encode
@@ -432,11 +400,8 @@ res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
 
-``
 
 ## JSON RESPONSE
-
-``
 {
     "CenterLatitude": 5.814259555768489,
     "CenterLongitude": 0.074672574122148,
@@ -457,8 +422,6 @@ print(data.decode("utf-8"))
     "PlaceName": ""
 }
 
-``
-
 If the request is successful, the requested location info is returned as response.
 
 
@@ -475,9 +438,8 @@ Longi. Longitude. example: 0.0746767
 #### Obtaining Location
 With the access token generated from the previous step, request for location info by calling our API with GPS Coordinates (Latitude & Longitude), see an example below.
 
-###### Javascript (axios)
+1. Javascript (axios)
 
-``
 var axios = require('axios');
 
 var config = {
@@ -498,12 +460,7 @@ axios(config)
   console.log(error);
 });
 
-``
-
-###### PHP (CURL)
-
-``
-
+2. PHP (CURL)
 <?php
 
 $curl = curl_init();
@@ -528,11 +485,7 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response;
 
-``
-
-###### Dart
-
-``
+3. Dart
 
 var headers = {
   'Accept': 'application/json',
@@ -552,12 +505,7 @@ else {
   print(response.reasonPhrase);
 }
 
-``
-
-###### Python(http.cient)
-
-``
-
+4. Python(http.cient)
 import http.client
 
 conn = http.client.HTTPSConnection("161.35.163.133")
@@ -571,11 +519,8 @@ res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
 
-``
 
 ## JSON RESPONNSE
-
-``
 
 {
     "GPSName": "GN09206217",
@@ -590,8 +535,6 @@ print(data.decode("utf-8"))
     "Street": ".[Unknown Street]",
     "PlaceName": ""
 }
-
-``
 If the request is successful, the requested location info is returned as response.
 
 
