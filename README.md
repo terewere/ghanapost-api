@@ -173,13 +173,13 @@ else {
 
 import http.client
 
-conn = http.client.HTTPSConnection("161.35.163.133")
+conn = http.client.HTTPSConnection("api.sourcecodegh.com")
 payload = ''
 headers = {
   'Accept': 'application/json',
   'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MjM5Y2Q4MC05NjViLTQ3YjUtODE3Ni1mOTI3YWViYTk4NmIiLCJqdGkiOiIyMDcxNTU0MmFmY2I2ZDE4YjVhOTc5NTkyMzU0ZmVjOTFmMDk2ZTExNGMzOTFlOThkNDIxNjNiYzcyZGUwMTE4NGI4MTNhNWJlOTc4OGU5MCIsImlhdCI6MTYwNzc2OTc1NywibmJmIjoxNjA3NzY5NzU3LCJleHAiOjE2MzkzMDU3NTcsInN1YiI6IiIsInNjb3BlcyI6WyJncHMiXX0.QgRsUWYMVHDD80SokvdD0KptYKmCI5GHOW-fbxxp3kLdvINiZTq0gHrhd1FuRABIlkaMJoBdr2tDq0JnuAXgIMQVaFPW1pN5DyYuwuxcyJWcSSs7XUViLOY4HjJiDPa3mynk-SB4JlSDllGLTUfhKDnAjAzfuMSuERyRxMqUvg6MRHZZlteMBBRU-FpAMEVg4KYofv4fxz_VMb3Fw-GD9hFaa4z-1ax5fAoYbAMvoI0KOHgU_EiD_2bsxpHxQjIhHnzPpJ54zVr_9rBsabn_zEtVqzGznfO6cxhmEoizDv3lqUMLop7fuuFexyOHrlq68KoNjG5-jdfyAgqKXJ5RKtxBOPW5BavQAo7CwjiwHSDQhnB1H96iwLoo9h5hs8-xfWCz6B0Mb7lk8Qg3T2yL6abA-6cFaJl1YRlyVnGlf8HabEz7QJOcSyw6vi6Aqo9xzuHmNWkuCdgQdeUqniaN_Z6QfCgiTkhZUfTIsPNGK-DV3PCqTq3tnOJhY1DSFmehesocYPx4KX9C0Ls6e8z6pIwW6FPn4p3tYXLkD4SKnHOJKZK_rsrKU20DYHy7Wsdl9FitJ5htdDGxJyHe_1Ftyb0HlCQUKdRHq4pBy6Xxp4qm5AYq4sh1YxGcdVlvIr3cHrBZhjZE4J79MH3lPOcF5NX9Bnpq3Mw7KBB4bQ-8vH4'
 }
-conn.request("GET", "/trial/GN09206216", payload, headers)
+conn.request("GET", "/v1/trial/GN09206216", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
@@ -191,13 +191,13 @@ print(data.decode("utf-8"))
 
 import http.client
 
-conn = http.client.HTTPSConnection("161.35.163.133")
+conn = http.client.HTTPSConnection("api.sourcecodegh.com")
 payload = ''
 headers = {
   'Accept': 'application/json',
   'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5MjM5Y2Q4MC05NjViLTQ3YjUtODE3Ni1mOTI3YWViYTk4NmIiLCJqdGkiOiIyMDcxNTU0MmFmY2I2ZDE4YjVhOTc5NTkyMzU0ZmVjOTFmMDk2ZTExNGMzOTFlOThkNDIxNjNiYzcyZGUwMTE4NGI4MTNhNWJlOTc4OGU5MCIsImlhdCI6MTYwNzc2OTc1NywibmJmIjoxNjA3NzY5NzU3LCJleHAiOjE2MzkzMDU3NTcsInN1YiI6IiIsInNjb3BlcyI6WyJncHMiXX0.QgRsUWYMVHDD80SokvdD0KptYKmCI5GHOW-fbxxp3kLdvINiZTq0gHrhd1FuRABIlkaMJoBdr2tDq0JnuAXgIMQVaFPW1pN5DyYuwuxcyJWcSSs7XUViLOY4HjJiDPa3mynk-SB4JlSDllGLTUfhKDnAjAzfuMSuERyRxMqUvg6MRHZZlteMBBRU-FpAMEVg4KYofv4fxz_VMb3Fw-GD9hFaa4z-1ax5fAoYbAMvoI0KOHgU_EiD_2bsxpHxQjIhHnzPpJ54zVr_9rBsabn_zEtVqzGznfO6cxhmEoizDv3lqUMLop7fuuFexyOHrlq68KoNjG5-jdfyAgqKXJ5RKtxBOPW5BavQAo7CwjiwHSDQhnB1H96iwLoo9h5hs8-xfWCz6B0Mb7lk8Qg3T2yL6abA-6cFaJl1YRlyVnGlf8HabEz7QJOcSyw6vi6Aqo9xzuHmNWkuCdgQdeUqniaN_Z6QfCgiTkhZUfTIsPNGK-DV3PCqTq3tnOJhY1DSFmehesocYPx4KX9C0Ls6e8z6pIwW6FPn4p3tYXLkD4SKnHOJKZK_rsrKU20DYHy7Wsdl9FitJ5htdDGxJyHe_1Ftyb0HlCQUKdRHq4pBy6Xxp4qm5AYq4sh1YxGcdVlvIr3cHrBZhjZE4J79MH3lPOcF5NX9Bnpq3Mw7KBB4bQ-8vH4'
 }
-conn.request("GET", "/trial/5.8142835999999996/0.0746767", payload, headers)
+conn.request("GET", "/v1/trial/5.8142835999999996/0.0746767", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
@@ -206,7 +206,7 @@ print(data.decode("utf-8"))
 
 # Setting up an Account
 To access the API without LIMITATION, you need to create an account. This is required to prevent abuse of the API.
-Setting up an account is compeletly FREE, simply sign up [Here](https://api.sourcecodegh.com/v1/register) . When you complete the signup form, a verification mail will be sent to you to verify your email. Upon successful verification, you will be able to generate client detail for accessing the API.
+Setting up an account is compeletly FREE, simply sign up [Here](https://api.sourcecodegh.com/register) . When you complete the signup form, a verification mail will be sent to you to verify your email. Upon successful verification, you will be able to generate client detail for accessing the API.
 
 
 # Usage
@@ -216,7 +216,7 @@ Setting up an account is compeletly FREE, simply sign up [Here](https://api.sour
 
 Used to generate token to access Ghana Post API.
 
-To obtain an `access_token`, you need to generate a `client` id and `secret` from your dashoard. **[Sign in Here](https://api.sourcecodegh.com/v1/login)**
+To obtain an `access_token`, you need to generate a `client` id and `secret` from your dashoard. **[Sign in Here](https://api.sourcecodegh.com/login)**
 
 #### Obtaining Access Token
 After generating client details, request for access token by calling our API with the client details, see an example below.
@@ -298,12 +298,12 @@ else {
 ```
 import http.client
 
-conn = http.client.HTTPSConnection("161.35.163.133")
+conn = http.client.HTTPSConnection("api.sourcecodegh.com")
 payload = ''
 headers = {
   'Accept': 'application/json'
 }
-conn.request("GET", "/token?client='client_id_here'&secret='client_secret_here'", payload, headers)
+conn.request("GET", "/v1/token?client='client_id_here'&secret='client_secret_here'", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
@@ -340,7 +340,7 @@ var axios = require('axios');
 
 var config = {
   method: 'get',
-  url: 'https://api.sourcecodegh.com/v1/gps?Action=GetLocation&GPSName=GN09206216',
+  url: 'https://api.sourcecodegh.com/v1?Action=GetLocation&GPSName=GN09206216',
   headers: { 
     'Accept': 'application/json', 
     'Authorization': 'Bearer [access_token_here]', 
@@ -365,7 +365,7 @@ axios(config)
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://api.sourcecodegh.com/v1/gps?Action=GetLocation&GPSName=GN09206216',
+  CURLOPT_URL => 'https://api.sourcecodegh.com/v1?Action=GetLocation&GPSName=GN09206216',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -396,7 +396,7 @@ var headers = {
   'Authorization': 'Bearer [access_token_here]'
 
 };
-var request = http.Request('GET', Uri.parse('https://api.sourcecodegh.com/v1/gps?Action=GetLocation&GPSName=GN09206216'));
+var request = http.Request('GET', Uri.parse('https://api.sourcecodegh.com/v1?Action=GetLocation&GPSName=GN09206216'));
 
 request.headers.addAll(headers);
 
@@ -419,14 +419,14 @@ import http.client
 import mimetypes
 from codecs import encode
 
-conn = http.client.HTTPSConnection("161.35.163.133")
+conn = http.client.HTTPSConnection("api.sourcecodegh.com")
 boundary = ''
 payload = ''
 headers = {
   'Accept': 'application/json',
   'Authorization': ''Bearer [access_token_here]'
 }
-conn.request("GET", "/gps?Action=GetLocation&GPSName=GN09206216", payload, headers)
+conn.request("GET", "/v1?Action=GetLocation&GPSName=GN09206216", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
@@ -481,7 +481,7 @@ var axios = require('axios');
 
 var config = {
   method: 'get',
-  url: 'https://api.sourcecodegh.com/v1/gps?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767',
+  url: 'https://api.sourcecodegh.com/v1?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767',
   headers: { 
     'Accept': 'application/json', 
     'Authorization': 'Bearer [access_token_here]'
@@ -508,7 +508,7 @@ axios(config)
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://api.sourcecodegh.com/v1/gps?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767',
+  CURLOPT_URL => 'https://api.sourcecodegh.com/v1?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -538,7 +538,7 @@ var headers = {
   'Authorization': 'Bearer [access_token_here]'
 
 };
-var request = http.Request('GET', Uri.parse('https://api.sourcecodegh.com/v1/gps?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767'));
+var request = http.Request('GET', Uri.parse('https://api.sourcecodegh.com/v1?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767'));
 
 request.headers.addAll(headers);
 
@@ -559,13 +559,13 @@ else {
 
 import http.client
 
-conn = http.client.HTTPSConnection("161.35.163.133")
+conn = http.client.HTTPSConnection("api.sourcecodegh.com")
 payload = ''
 headers = {
   'Accept': 'application/json',
   'Authorization': 'Bearer [access_token_here]'
 }
-conn.request("GET", "/gps?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767", payload, headers)
+conn.request("GET", "/v1?Action=GetGPSName&Lati=5.8142835999999996&Longi=0.0746767", payload, headers)
 res = conn.getresponse()
 data = res.read()
 print(data.decode("utf-8"))
